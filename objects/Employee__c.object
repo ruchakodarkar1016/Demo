@@ -152,34 +152,27 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>First_Name__c</fullName>
+        <fullName>Department__c</fullName>
         <externalId>false</externalId>
-        <label>First Name</label>
-        <length>15</length>
-        <required>true</required>
+        <label>Department</label>
+        <referenceTo>Department__c</referenceTo>
+        <relationshipLabel>Employees</relationshipLabel>
+        <relationshipName>Employees</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
-    <fields>
-        <fullName>Second_Name__c</fullName>
-        <externalId>false</externalId>
-        <label>Second Name</label>
-        <length>15</length>
-        <required>true</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <label>Demo</label>
+    <label>Employee</label>
     <nameField>
-        <label>Demo Name</label>
+        <label>Employee Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Demos</pluralLabel>
+    <pluralLabel>Employees</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

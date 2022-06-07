@@ -154,31 +154,93 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>First_Name__c</fullName>
+        <fullName>Currency__c</fullName>
         <externalId>false</externalId>
-        <label>First Name</label>
-        <length>15</length>
-        <required>true</required>
+        <label>Currency</label>
+        <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>INr</fullName>
+                    <default>false</default>
+                    <label>INr</label>
+                </value>
+                <value>
+                    <fullName>USD</fullName>
+                    <default>false</default>
+                    <label>USD</label>
+                </value>
+                <value>
+                    <fullName>UK</fullName>
+                    <default>false</default>
+                    <label>UK</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
-        <fullName>Second_Name__c</fullName>
+        <fullName>Department_No__c</fullName>
+        <displayFormat>A{0000}</displayFormat>
         <externalId>false</externalId>
-        <label>Second Name</label>
-        <length>15</length>
-        <required>true</required>
+        <label>Department No</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Food</fullName>
+                    <default>false</default>
+                    <label>Food</label>
+                </value>
+                <value>
+                    <fullName>Engineering</fullName>
+                    <default>false</default>
+                    <label>Engineering</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+                <value>
+                    <fullName>HR</fullName>
+                    <default>false</default>
+                    <label>HR</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Dept_Grade__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL( Department__c , &apos;Food&apos;) , &apos;A&apos;, &apos;B&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Dept Grade</label>
+        <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>Demo</label>
+    <label>Department</label>
     <nameField>
-        <label>Demo Name</label>
+        <label>Department Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Demos</pluralLabel>
+    <pluralLabel>Departments</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

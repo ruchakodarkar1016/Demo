@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Department</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Departments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+        <picklistValues>
+            <masterLabel>INr</masterLabel>
+            <translation><!-- INr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation><!-- UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Department No --></label>
+        <name>Department_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food</masterLabel>
+            <translation><!-- Food --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dept Grade --></label>
+        <name>Dept_Grade__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

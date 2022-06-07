@@ -143,42 +143,33 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>false</enableActivities>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>false</enableReports>
+    <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>First_Name__c</fullName>
+        <fullName>Score__c</fullName>
         <externalId>false</externalId>
-        <label>First Name</label>
-        <length>15</length>
+        <label>Score</label>
+        <precision>10</precision>
         <required>true</required>
+        <scale>0</scale>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>Second_Name__c</fullName>
-        <externalId>false</externalId>
-        <label>Second Name</label>
-        <length>15</length>
-        <required>true</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <label>Demo</label>
+    <label>AzureCandidate</label>
     <nameField>
-        <label>Demo Name</label>
+        <label>AzureCandidate Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Demos</pluralLabel>
+    <pluralLabel>AzureCandidates</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

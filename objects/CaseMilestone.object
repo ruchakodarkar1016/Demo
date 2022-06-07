@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
-        <actionName>Accept</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -25,20 +11,6 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>CancelEdit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -85,20 +57,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>New</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -140,46 +98,73 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>false</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>First_Name__c</fullName>
-        <externalId>false</externalId>
-        <label>First Name</label>
-        <length>15</length>
-        <required>true</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <fullName>BusinessHoursId</fullName>
+        <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Second_Name__c</fullName>
-        <externalId>false</externalId>
-        <label>Second Name</label>
-        <length>15</length>
-        <required>true</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <fullName>CaseId</fullName>
+        <type>Lookup</type>
     </fields>
-    <label>Demo</label>
-    <nameField>
-        <label>Demo Name</label>
-        <type>Text</type>
-    </nameField>
-    <pluralLabel>Demos</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
+    <fields>
+        <fullName>CompletionDate</fullName>
+    </fields>
+    <fields>
+        <fullName>ElapsedTimeInDays</fullName>
+    </fields>
+    <fields>
+        <fullName>ElapsedTimeInHrs</fullName>
+    </fields>
+    <fields>
+        <fullName>ElapsedTimeInMins</fullName>
+    </fields>
+    <fields>
+        <fullName>IsCompleted</fullName>
+    </fields>
+    <fields>
+        <fullName>IsViolated</fullName>
+    </fields>
+    <fields>
+        <fullName>MilestoneId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SlaProcessId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+    </fields>
+    <fields>
+        <fullName>TargetDate</fullName>
+    </fields>
+    <fields>
+        <fullName>TargetResponseInDays</fullName>
+    </fields>
+    <fields>
+        <fullName>TargetResponseInHrs</fullName>
+    </fields>
+    <fields>
+        <fullName>TargetResponseInMins</fullName>
+    </fields>
+    <fields>
+        <fullName>TimeRemainingInDays</fullName>
+    </fields>
+    <fields>
+        <fullName>TimeRemainingInHrs</fullName>
+    </fields>
+    <fields>
+        <fullName>TimeRemainingInMins</fullName>
+    </fields>
+    <fields>
+        <fullName>TimeSinceTargetInDays</fullName>
+    </fields>
+    <fields>
+        <fullName>TimeSinceTargetInHrs</fullName>
+    </fields>
+    <fields>
+        <fullName>TimeSinceTargetInMins</fullName>
+    </fields>
 </CustomObject>
